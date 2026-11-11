@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify persons according to their roles, status, or characteristics.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

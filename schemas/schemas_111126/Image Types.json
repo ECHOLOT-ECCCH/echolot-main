@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify images according to their format, content, or function.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

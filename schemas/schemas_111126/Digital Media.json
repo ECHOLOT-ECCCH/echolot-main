@@ -1,0 +1,143 @@
+{
+	"description": "Any digital resource or small set of consistent resources that are the output of a single process or activity, including images, word or pdf documents, video, audio or data files.\nEach individual file can have its own technical and identity information, but the creation of them is described only at the instance level.",
+	"propertyDefinitions": {
+		"Name": {
+			"type": "relation",
+			"description": "Link to the reified Name collection.",
+			"required": false,
+			"targetSchemas": [
+				"Name"
+			],
+			"multiple": true
+		},
+		"Identifier": {
+			"type": "relation",
+			"description": "Link to the reified Identifier collection.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier"
+			],
+			"multiple": true
+		},
+		"Equivalent": {
+			"type": "url",
+			"description": "This field is used to document a URI which is meant to indicate an equivalence between the documented digital object and a resolvable, structured reference resource that stands as a document for this self same entity.",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Access Point": {
+			"type": "url",
+			"description": "This field is used to indicate a URL at which a digital object acn be found.",
+			"required": false,
+			"multiple": true,
+			"uniqueItems": false
+		},
+		"Type": {
+			"type": "relation",
+			"description": "Link to the reified Type collection.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Types"
+			],
+			"multiple": false
+		},
+		"Format": {
+			"type": "text",
+			"description": "This field is used to indicate the format of a textual work.",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false,
+			"minLength": 1,
+			"maxLength": 1
+		},
+		"Dimension": {
+			"type": "relation",
+			"description": "Link to the reified Dimension collection.",
+			"required": false,
+			"targetSchemas": [
+				"Dimension"
+			],
+			"multiple": false
+		},
+		"Creation": {
+			"type": "relation",
+			"description": "Link to the reified Creation collection.",
+			"required": false,
+			"targetSchemas": [
+				"Creation"
+			],
+			"multiple": false
+		},
+		"Digital Service Access Point": {
+			"type": "url",
+			"description": "This field is used to indicate access points which a digital service provides for a digital object that it serves.",
+			"required": false,
+			"multiple": true,
+			"uniqueItems": false
+		},
+		"Part of Digital Media": {
+			"type": "relation",
+			"description": "This field is used to link the documented digital object to another digital object of which it forms a part.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Media"
+			],
+			"multiple": true
+		},
+		"Visual Work Shown by Digital Media": {
+			"type": "relation",
+			"description": "This field is used to link the documented digital object to an image which it shows.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": true
+		},
+		"Text Carried by Digital Media": {
+			"type": "relation",
+			"description": "This field is used to link the documented digital object to a text which it bears.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Statement": {
+			"type": "relation",
+			"description": "Link to the reified Statement collection.",
+			"required": false,
+			"targetSchemas": [
+				"Statement"
+			],
+			"multiple": true
+		},
+		"Rights": {
+			"type": "relation",
+			"description": "Link to the reified Rights collection.",
+			"required": false,
+			"targetSchemas": [
+				"Rights"
+			],
+			"multiple": false
+		},
+		"Depicting Image": {
+			"type": "relation",
+			"description": "This field  is used to record the existence of an image which depicts the documented digital object.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": true
+		},
+		"Source Reference Work": {
+			"type": "relation",
+			"description": "This field is used to link the documented digital object to an instance of textual work which describes or documents it.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		}
+	}
+}

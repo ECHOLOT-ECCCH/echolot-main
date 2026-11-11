@@ -1,0 +1,34 @@
+{
+	"description": "A collection of fields describing the formation and establishment of a group.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Formation Actor": {
+			"type": "relation",
+			"description": "Identifies the type of actor involved in the formation of a group.",
+			"required": false,
+			"targetSchemas": [
+				"Person",
+				"Organization"
+			],
+			"multiple": true
+		},
+		"Formation Location": {
+			"type": "relation",
+			"description": "Identifies the location where a group was formed.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Formation Date": {
+			"type": "relation",
+			"description": "Records the date on which a group was formed.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

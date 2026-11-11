@@ -1,0 +1,32 @@
+{
+	"description": "Reified 'Identifier' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Identifier": {
+			"type": "text",
+			"description": "This field is used to record an identifier attributed to the documented entity .",
+			"required": true,
+			"multiple": false,
+			"uniqueItems": false,
+			"maxLength": 500
+		},
+		"Identifier Type": {
+			"type": "relation",
+			"description": "This field is used to record the type of the identifier attributed to the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier Types"
+			],
+			"multiple": true
+		},
+		"Source Reference Work for Identifier": {
+			"type": "relation",
+			"description": "This field is used to link to a source text in which the identifier denoting the documented entity is used.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		}
+	}
+}

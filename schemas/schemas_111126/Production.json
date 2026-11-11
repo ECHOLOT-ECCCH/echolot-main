@@ -1,0 +1,79 @@
+{
+	"description": "Production' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Creator in Production Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented production activity to an actor responsible for carrying it out.",
+			"required": false,
+			"targetSchemas": [
+				"Person",
+				"Organization"
+			],
+			"multiple": true
+		},
+		"Location of Production Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented production activity to a location at which it was carried out.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Object used in Production Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented production activity to an instance of physical object used in the exercise of this activity in a manner consequential to its outcome.",
+			"required": false,
+			"targetSchemas": [
+				"Cultural Heritage Object"
+			],
+			"multiple": true
+		},
+		"Production Event Technique": {
+			"type": "relation",
+			"description": "This field is used to indicate a kind of technique used in the execution of the documented  production activity.",
+			"required": false,
+			"targetSchemas": [
+				"Techniques"
+			],
+			"multiple": false
+		},
+		"Related Event Causal to Production Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented production activity to another event which was the causal reason behind its coming to be.",
+			"required": false,
+			"targetSchemas": [
+				"Event"
+			],
+			"multiple": false
+		},
+		"Production Event Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the documented production activity.",
+			"required": false,
+			"targetSchemas": [
+				"Production Types"
+			],
+			"multiple": false
+		},
+		"Production Event Source Reference": {
+			"type": "relation",
+			"description": "This field is used to link the documented production activity to a textual source which documents the activity itself.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Date of Production Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented production activity to an instance of time-span recording the temporal extent of the activity.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

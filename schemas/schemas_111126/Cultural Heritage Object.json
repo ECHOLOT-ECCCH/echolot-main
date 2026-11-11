@@ -1,0 +1,219 @@
+{
+	"description": "A physical object, including works of art, the tools used to create them, and instruments used to measure or conserve them.",
+	"propertyDefinitions": {
+		"Name": {
+			"type": "relation",
+			"description": "Link to the reified Name collection.",
+			"required": false,
+			"targetSchemas": [
+				"Name"
+			],
+			"multiple": true
+		},
+		"Identifier": {
+			"type": "relation",
+			"description": "Link to the reified Identifier collection.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier"
+			],
+			"multiple": true
+		},
+		"Equivalent": {
+			"type": "url",
+			"description": "This field is used to document a URI which is meant to indicate an equivalence between the documented physical thing and a resolvable, structured reference resource that stands as a document for this self same entity.",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Type": {
+			"type": "select",
+			"description": "Link to the reified Type collection.",
+			"required": false,
+			"options": [
+				{
+					"id": "Picture",
+					"label": "Picture"
+				},
+				{
+					"id": "Painting",
+					"label": "Painting"
+				},
+				{
+					"id": "Sculpture",
+					"label": "Sculpture"
+				}
+			],
+			"multiple": true
+		},
+		"Dimension": {
+			"type": "relation",
+			"description": "Link to the reified Dimension collection.",
+			"required": false,
+			"targetSchemas": [
+				"Dimension"
+			],
+			"multiple": false
+		},
+		"Material": {
+			"type": "select",
+			"description": "This field is used to record the material of which the documented physical thing consists.",
+			"required": false,
+			"options": [],
+			"multiple": true
+		},
+		"Production": {
+			"type": "relation",
+			"description": "Link to the reified Production collection.",
+			"required": false,
+			"targetSchemas": [
+				"Production"
+			],
+			"multiple": false
+		},
+		"Destruction": {
+			"type": "relation",
+			"description": "Link to the reified Destruction collection.",
+			"required": false,
+			"targetSchemas": [
+				"Destruction"
+			],
+			"multiple": false
+		},
+		"Permanent Location": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing with the instance of place that stands as its permanent location.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Part of Object": {
+			"type": "relation",
+			"description": "This field is used to link the documented instance of physical thing to another instance of physical thing of which it forms a part.",
+			"required": false,
+			"targetSchemas": [
+				"Cultural Heritage Object"
+			],
+			"multiple": true
+		},
+		"Visual Image Shown": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing to an instance of visual work that it shows.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": true
+		},
+		"Text Carried": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing to an instance of textual object which it carries.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Statement": {
+			"type": "relation",
+			"description": "Link to the reified Statement collection.",
+			"required": false,
+			"targetSchemas": [
+				"Statement"
+			],
+			"multiple": true
+		},
+		"Rights": {
+			"type": "relation",
+			"description": "Link to the reified Rights collection.",
+			"required": false,
+			"targetSchemas": [
+				"Rights"
+			],
+			"multiple": false
+		},
+		"Current Custodian": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing with an instance of person or group that is its present custodian.",
+			"required": false,
+			"targetSchemas": [
+				"Person"
+			],
+			"multiple": true
+		},
+		"Current Owner": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing with an instance of person or group that is its present owner.",
+			"required": false,
+			"targetSchemas": [
+				"Person"
+			],
+			"multiple": true
+		},
+		"Depicting Image": {
+			"type": "relation",
+			"description": "This field  is used to record the existence of an image which depicts the documented physical thing.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": true
+		},
+		"Digital Reference": {
+			"type": "relation",
+			"description": "Link to the reified Digital Reference collection.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Reference"
+			],
+			"multiple": true
+		},
+		"Source Reference Work": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing to an instance of textual work which describes or documents it.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Condition State": {
+			"type": "relation",
+			"description": "This field is used to indicate a condition state type that has been attributed to the documented object.",
+			"required": false,
+			"targetSchemas": [
+				"Condition State Types"
+			],
+			"multiple": false
+		},
+		"Performance Date": {
+			"type": "relation",
+			"description": "Documents the time-span associated with an activity that is part of the documented cultural heritage object, describing when the activity occurred or the period during which it took place.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		},
+		"Image": {
+			"type": "relation",
+			"description": "This field is used to record a digital image which is representative of the documented object.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": false
+		},
+		"Part of Collection": {
+			"type": "relation",
+			"description": "Identifies the curated holding or collection that includes the documented cultural heritage object as part of its composition.",
+			"required": false,
+			"targetSchemas": [
+				"Subjects"
+			],
+			"multiple": true
+		}
+	}
+}

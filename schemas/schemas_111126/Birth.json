@@ -1,0 +1,24 @@
+{
+	"description": "Reified 'Birth' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Location of Birth": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of birth to a location at which it occurred.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Date of Birth": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of birth to an instance of time-span recording the temporal extent of the event .",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

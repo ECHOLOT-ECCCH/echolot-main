@@ -1,0 +1,33 @@
+{
+	"description": "Reified 'Family Relations' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Family Relative": {
+			"type": "relation",
+			"description": "This field is used to link the documented person to another person with whom they are related via a particular familial status.",
+			"required": false,
+			"targetSchemas": [
+				"Person"
+			],
+			"multiple": false
+		},
+		"Family Relation": {
+			"type": "relation",
+			"description": "This field is used to record the property, as a formal type, represented in the familial status ascribed to the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Family Relations"
+			],
+			"multiple": false
+		},
+		"Family Relation Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the family status ascribed to the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Family Relation Types"
+			],
+			"multiple": false
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify production processes according to their nature or method.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

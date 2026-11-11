@@ -1,0 +1,138 @@
+{
+	"description": "The conceptual, visual content of an artwork, that can be carried by one or more physical objects or digital resources. The content of an artwork still exists after the destruction of the last carrier of that content.",
+	"propertyDefinitions": {
+		"Name": {
+			"type": "relation",
+			"description": "Link to the reified Name collection.",
+			"required": false,
+			"targetSchemas": [
+				"Name"
+			],
+			"multiple": true
+		},
+		"Identifier": {
+			"type": "relation",
+			"description": "Link to the reified Identifier collection.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier"
+			],
+			"multiple": true
+		},
+		"Equivalent": {
+			"type": "url",
+			"description": "This field is used to document a URI which is meant to indicate an equivalence between the documented visual work and a resolvable, structured reference resource that stands as a document for this self same entity.",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Type": {
+			"type": "relation",
+			"description": "Link to the reified Type collection.",
+			"required": false,
+			"targetSchemas": [
+				"Image Types"
+			],
+			"multiple": false
+		},
+		"Dimension": {
+			"type": "relation",
+			"description": "Link to the reified Dimension collection.",
+			"required": false,
+			"targetSchemas": [
+				"Dimension"
+			],
+			"multiple": false
+		},
+		"Creation": {
+			"type": "relation",
+			"description": "Link to the reified Creation collection.",
+			"required": false,
+			"targetSchemas": [
+				"Creation"
+			],
+			"multiple": false
+		},
+		"Publication": {
+			"type": "relation",
+			"description": "Link to the reified Publication collection.",
+			"required": false,
+			"targetSchemas": [
+				"Publication"
+			],
+			"multiple": true
+		},
+		"Physical Object Depicted": {
+			"type": "relation",
+			"description": "This field is used to link the documented visual work to an instance of physical thing that it depicts.",
+			"required": false,
+			"targetSchemas": [
+				"Cultural Heritage Object"
+			],
+			"multiple": true
+		},
+		"Type Depicted": {
+			"type": "relation",
+			"description": "This field is used to link the documented visual work to a class of thing that it depicts.",
+			"required": false,
+			"targetSchemas": [
+				"Types Depicted"
+			],
+			"multiple": false
+		},
+		"Entity Intended": {
+			"type": "relation",
+			"description": "This field is used to link the documented visual work to the subject it is about.",
+			"required": false,
+			"targetSchemas": [
+				"Subject Types"
+			],
+			"multiple": false
+		},
+		"Imager Carrier": {
+			"type": "relation",
+			"description": "",
+			"required": false,
+			"targetSchemas": [
+				"Cultural Heritage Object"
+			],
+			"multiple": true
+		},
+		"Digitally Shown By": {
+			"type": "relation",
+			"description": "",
+			"required": false,
+			"targetSchemas": [
+				"Digital Media"
+			],
+			"multiple": true
+		},
+		"Statement": {
+			"type": "relation",
+			"description": "Link to the reified Statement collection.",
+			"required": false,
+			"targetSchemas": [
+				"Statement"
+			],
+			"multiple": true
+		},
+		"Digital Reference": {
+			"type": "relation",
+			"description": "Link to the reified Digital Reference collection.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Reference"
+			],
+			"multiple": true
+		},
+		"Source Reference Work": {
+			"type": "relation",
+			"description": "This field is used to link the documented visual work to an instance of textual work in which it is documented or mentioned.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		}
+	}
+}

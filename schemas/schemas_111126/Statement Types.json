@@ -1,0 +1,26 @@
+{
+	"description": "A controlled list of statement types used to classify statements according to their nature, purpose, or function.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Metatype": {
+			"type": "relation",
+			"description": "",
+			"required": false,
+			"default": [
+				{
+					"target": "sF1gZf2WenuKPPC"
+				}
+			],
+			"targetSchemas": [
+				"Metatypes"
+			],
+			"multiple": false
+		}
+	}
+}

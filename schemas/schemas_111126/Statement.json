@@ -1,0 +1,42 @@
+{
+	"description": "Reified 'Statement' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Statement": {
+			"type": "text",
+			"description": "This field is used to record the actual textual content of the statement describing the documented person.",
+			"required": true,
+			"multiple": false,
+			"uniqueItems": false,
+			"minLength": 1,
+			"maxLength": 1
+		},
+		"Statement Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the statement made about the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Statement Types"
+			],
+			"multiple": false
+		},
+		"Statement Language": {
+			"type": "relation",
+			"description": "This field is used to record the language of the statement describing the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Languages"
+			],
+			"multiple": true
+		},
+		"Statement Source Reference": {
+			"type": "relation",
+			"description": "This field is used to link to a source text from which the statement describing the documented physical thing is derived.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify relationships between entities, persons, or resources.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

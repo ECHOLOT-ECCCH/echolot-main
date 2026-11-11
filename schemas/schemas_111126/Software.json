@@ -1,0 +1,86 @@
+{
+	"description": "Software model (WP2.3).",
+	"propertyDefinitions": {
+		"Name": {
+			"type": "relation",
+			"description": "Link to the reified Name collection.",
+			"required": false,
+			"targetSchemas": [
+				"Name"
+			],
+			"multiple": true
+		},
+		"Identifier": {
+			"type": "relation",
+			"description": "Link to the reified Identifier collection.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier"
+			],
+			"multiple": true
+		},
+		"Type": {
+			"type": "relation",
+			"description": "Link to the reified Type collection.",
+			"required": false,
+			"targetSchemas": [
+				"Software Types"
+			],
+			"multiple": false
+		},
+		"Dimension": {
+			"type": "relation",
+			"description": "Link to the reified Dimension collection.",
+			"required": false,
+			"targetSchemas": [
+				"Dimension"
+			],
+			"multiple": false
+		},
+		"Digital Access Point": {
+			"type": "relation",
+			"description": "Link to the reified Digital Access Point collection.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Access Point"
+			],
+			"multiple": true
+		},
+		"Statement": {
+			"type": "relation",
+			"description": "Link to the reified Statement collection.",
+			"required": false,
+			"targetSchemas": [
+				"Statement"
+			],
+			"multiple": true
+		},
+		"Rights": {
+			"type": "relation",
+			"description": "Link to the reified Right collection.",
+			"required": false,
+			"targetSchemas": [
+				"Rights"
+			],
+			"multiple": true
+		},
+		"Digital Reference": {
+			"type": "relation",
+			"description": "Link to the reified Digital Reference collection.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Reference"
+			],
+			"multiple": true
+		},
+		"Source Reference Work": {
+			"type": "relation",
+			"description": "This field is used to link the documented software to an instance of textual work in which it is documented or mentioned.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		}
+	}
+}

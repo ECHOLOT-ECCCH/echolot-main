@@ -1,0 +1,22 @@
+{
+	"description": "Reified 'Digital Access Point' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Digital Access Point": {
+			"type": "url",
+			"description": "This field is used to record the string value of the web address by which the documented software may be accessed.",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Digital Access Point Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the web address by which the documented software may be accessed.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Access Types"
+			],
+			"multiple": false
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of units of measurement used to express the dimensions of physical objects, including length, width, height, and depth.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

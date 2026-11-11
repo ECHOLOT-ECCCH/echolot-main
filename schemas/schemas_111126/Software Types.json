@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify software according to its function, purpose, or application.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

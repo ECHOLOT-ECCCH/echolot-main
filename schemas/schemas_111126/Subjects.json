@@ -1,0 +1,30 @@
+{
+	"description": "Subjects model (WP2.3).",
+	"propertyDefinitions": {
+		"Name": {
+			"type": "relation",
+			"description": "Link to the reified Name collection.",
+			"required": false,
+			"targetSchemas": [
+				"Name"
+			],
+			"multiple": true
+		},
+		"Identifier": {
+			"type": "relation",
+			"description": "Link to the reified Identifier collection.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier"
+			],
+			"multiple": true
+		},
+		"Equivalent": {
+			"type": "url",
+			"description": "This field is used to document a URI which is meant to indicate an equivalence between the documented place and a resolvable, structured reference resource that stands as a document for this self same entity.",
+			"required": true,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

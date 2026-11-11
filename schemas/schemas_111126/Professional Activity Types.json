@@ -1,0 +1,26 @@
+{
+	"description": "A controlled list of types used to classify professional activities according to their nature or function.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Metatype": {
+			"type": "relation",
+			"description": "This field is used to record the type of the formal type of the professional activity undertaken by the documented actor.",
+			"required": false,
+			"default": [
+				{
+					"target": "sF1gZifbLeUAZEu"
+				}
+			],
+			"targetSchemas": [
+				"Metatypes"
+			],
+			"multiple": false
+		}
+	}
+}

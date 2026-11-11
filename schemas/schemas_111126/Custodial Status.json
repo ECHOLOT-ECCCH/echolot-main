@@ -1,0 +1,43 @@
+{
+	"description": "A collection of fields describing the current or historical custody of an object or resource.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Custodian": {
+			"type": "relation",
+			"description": "Identifies the person or organisation responsible for the custody of an object or resource.",
+			"required": false,
+			"targetSchemas": [
+				"Person",
+				"Organization"
+			],
+			"multiple": true
+		},
+		"Relationship": {
+			"type": "relation",
+			"description": "Describes the relationship between two entities, persons, or resources.",
+			"required": false,
+			"targetSchemas": [
+				"Relationship Types"
+			],
+			"multiple": false
+		},
+		"Type": {
+			"type": "relation",
+			"description": "Describes the type of custodial status associated with an object or resource.",
+			"required": false,
+			"targetSchemas": [
+				"Custodial Status Types"
+			],
+			"multiple": false
+		},
+		"Date": {
+			"type": "relation",
+			"description": "Records the date associated with a change or period of custody of an object or resource.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

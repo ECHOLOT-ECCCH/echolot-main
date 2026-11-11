@@ -1,0 +1,174 @@
+{
+	"description": "Hardware model (WP2.3).",
+	"propertyDefinitions": {
+		"Name": {
+			"type": "relation",
+			"description": "Link to the reified Name collection.",
+			"required": false,
+			"targetSchemas": [
+				"Name"
+			],
+			"multiple": true
+		},
+		"Identifier": {
+			"type": "relation",
+			"description": "Link to the reified Identifier collection.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier"
+			],
+			"multiple": true
+		},
+		"Equivalent": {
+			"type": "url",
+			"description": "This field is used to document a URI which is meant to indicate an equivalence between the documented physical thing and a resolvable, structured reference resource that stands as a document for this self same entity.",
+			"required": false,
+			"multiple": true,
+			"uniqueItems": false
+		},
+		"Type": {
+			"type": "relation",
+			"description": "Link to the reified Type collection.",
+			"required": false,
+			"targetSchemas": [
+				"Hardware Types"
+			],
+			"multiple": false
+		},
+		"Material": {
+			"type": "relation",
+			"description": "This field is used to record the material of which the documented physical thing consists.",
+			"required": false,
+			"targetSchemas": [
+				"Material Types"
+			],
+			"multiple": false
+		},
+		"Production": {
+			"type": "relation",
+			"description": "Link to the reified Production collection.",
+			"required": false,
+			"targetSchemas": [
+				"Production"
+			],
+			"multiple": false
+		},
+		"Destruction": {
+			"type": "relation",
+			"description": "Link to the reified Destruction collection.",
+			"required": false,
+			"targetSchemas": [
+				"Destruction"
+			],
+			"multiple": false
+		},
+		"Permanent Location": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing with the instance of place that stands as its permanent location.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Part of Object": {
+			"type": "relation",
+			"description": "This field is used to link the documented instance of physical thing to another instance of physical thing of which it forms a part.",
+			"required": false,
+			"targetSchemas": [
+				"Cultural Heritage Object"
+			],
+			"multiple": true
+		},
+		"Visual Image Shown": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing to an instance of visual work that it shows.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": true
+		},
+		"Statement": {
+			"type": "relation",
+			"description": "Link to the reified Statement collection.",
+			"required": false,
+			"targetSchemas": [
+				"Statement"
+			],
+			"multiple": true
+		},
+		"Rights": {
+			"type": "relation",
+			"description": "Link to the reified Rights collection.",
+			"required": false,
+			"targetSchemas": [
+				"Rights"
+			],
+			"multiple": true
+		},
+		"Current Custodian": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing with an instance of person or group that is its present custodian.",
+			"required": false,
+			"targetSchemas": [
+				"Person"
+			],
+			"multiple": true
+		},
+		"Current Owner": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing with an instance of person or group that is its present owner.",
+			"required": false,
+			"targetSchemas": [
+				"Person"
+			],
+			"multiple": true
+		},
+		"Depicting Image": {
+			"type": "relation",
+			"description": "This field  is used to record the existence of an image which depicts the documented physical thing.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": true
+		},
+		"Digital Reference": {
+			"type": "relation",
+			"description": "Link to the reified Digital Reference collection.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Reference"
+			],
+			"multiple": true
+		},
+		"Source Reference Work": {
+			"type": "relation",
+			"description": "This field is used to link the documented physical thing to an instance of textual work which describes or documents it.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Condition State": {
+			"type": "relation",
+			"description": "This field is used to indicate a condition state type that has been attributed to the documented hardware.",
+			"required": false,
+			"targetSchemas": [
+				"Condition State Types"
+			],
+			"multiple": false
+		},
+		"Custodial Status": {
+			"type": "relation",
+			"description": "Link to the reified Custodial Status collection.",
+			"required": false,
+			"targetSchemas": [
+				"Custodial Status"
+			],
+			"multiple": true
+		}
+	}
+}

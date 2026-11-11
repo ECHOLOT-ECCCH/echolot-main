@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of subject types used to classify the subjects or topics represented, described, or referred to in a resource or work.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

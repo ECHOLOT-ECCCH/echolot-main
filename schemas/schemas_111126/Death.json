@@ -1,0 +1,24 @@
+{
+	"description": "Reified 'Death' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Location of Death": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of death to a location at which it occurred.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Date of Death": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of death to an instance of time-span recording the temporal extent of the event.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

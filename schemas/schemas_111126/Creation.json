@@ -1,0 +1,61 @@
+{
+	"description": "Reified 'Creation' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Creator": {
+			"type": "relation",
+			"description": "This field is used to link the documented textual work creation activity to an actor responsible for carrying it out.",
+			"required": false,
+			"targetSchemas": [
+				"Person",
+				"Organization"
+			],
+			"multiple": true
+		},
+		"Creation Event Location": {
+			"type": "relation",
+			"description": "This field is used to link the documented textual work creation activity to a location at which it was carried out.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Creation Event Technique": {
+			"type": "relation",
+			"description": "This field is used to indicate a kind of technique used in the execution of the documented entity creation activity.",
+			"required": false,
+			"targetSchemas": [
+				"Techniques"
+			],
+			"multiple": true
+		},
+		"Creation Event Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the documented textual work creation activity.",
+			"required": false,
+			"targetSchemas": [
+				"Creation Event Types"
+			],
+			"multiple": false
+		},
+		"Creation Event Source Reference": {
+			"type": "relation",
+			"description": "This field is used to link the documented textual work creation activity to a textual source which documents the creation itself.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Date of Creation Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented textual work creation activity to an instance of time-span recording the temporal extent of the activity.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

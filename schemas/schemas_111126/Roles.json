@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of roles used to define the functions or responsibilities performed by persons or organisations in relation to events, activities, or entities.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

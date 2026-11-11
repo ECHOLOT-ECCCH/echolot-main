@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify materials according to their composition or physical nature.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

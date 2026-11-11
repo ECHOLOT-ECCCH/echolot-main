@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of techniques used to describe the methods or processes employed in the creation, production, treatment, or modification of an object or work.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

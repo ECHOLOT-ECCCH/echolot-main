@@ -1,0 +1,26 @@
+{
+	"description": "A controlled list of terms used to describe or classify gender identities.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Metatype": {
+			"type": "relation",
+			"description": "",
+			"required": false,
+			"default": [
+				{
+					"target": "sF1gXfWLuUzeLK6"
+				}
+			],
+			"targetSchemas": [
+				"Metatypes"
+			],
+			"multiple": false
+		}
+	}
+}

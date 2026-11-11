@@ -1,0 +1,23 @@
+{
+	"description": "A span of time with a start and an end .",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Label": {
+			"type": "text",
+			"description": "Human-readable label.",
+			"required": true,
+			"minLength": 1,
+			"maxLength": 1
+		},
+		"Start": {
+			"type": "date",
+			"description": "Beginning. ",
+			"required": true
+		},
+		"End": {
+			"type": "date",
+			"description": "End",
+			"required": true
+		}
+	}
+}

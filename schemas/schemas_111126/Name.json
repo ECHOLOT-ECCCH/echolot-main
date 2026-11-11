@@ -1,0 +1,42 @@
+{
+	"description": "Reified 'Name' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Name": {
+			"type": "text",
+			"description": "This field is used to record the string value of the name attributed to the documented entity.",
+			"required": true,
+			"multiple": false,
+			"uniqueItems": false,
+			"minLength": 1,
+			"maxLength": 500
+		},
+		"Name Type": {
+			"type": "relation",
+			"description": "This field is used to record the type of the name attributed to the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Name Type"
+			],
+			"multiple": true
+		},
+		"Name Language": {
+			"type": "relation",
+			"description": "This field is used to record the language of the name attributed to the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Languages"
+			],
+			"multiple": true
+		},
+		"Source Reference Work for Name": {
+			"type": "relation",
+			"description": "This field is used to link to a source text in which the name denoting the documented entity is used.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		}
+	}
+}

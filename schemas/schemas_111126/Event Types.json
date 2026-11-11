@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify events according to their nature, purpose, or function.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

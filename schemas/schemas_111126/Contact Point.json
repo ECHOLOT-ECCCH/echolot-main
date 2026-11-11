@@ -1,0 +1,24 @@
+{
+	"description": "Reified 'Contact Point' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Contact Point": {
+			"type": "text",
+			"description": "This field is used to record a contact point attributed to the documented person.",
+			"required": true,
+			"multiple": false,
+			"uniqueItems": false,
+			"minLength": 1,
+			"maxLength": 1
+		},
+		"Contact Point Type": {
+			"type": "relation",
+			"description": "This field is used to record the type of the contact point attributed to the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Contact Point Types"
+			],
+			"multiple": false
+		}
+	}
+}

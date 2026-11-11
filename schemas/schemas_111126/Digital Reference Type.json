@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of digital reference types used to classify digital references according to their nature, format, or function, such as URLs, digital identifiers, or links to online resources.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

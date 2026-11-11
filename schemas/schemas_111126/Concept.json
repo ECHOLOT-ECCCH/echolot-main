@@ -1,0 +1,22 @@
+{
+	"description": "A term drawn from a controlled vocabulary or thesaurus.",
+	"propertyDefinitions": {
+		"Label": {
+			"type": "text",
+			"required": true,
+			"description": "Preferred label."
+		},
+		"Vocabulary": {
+			"type": "text",
+			"description": "Source vocabulary / thesaurus."
+		},
+		"Identifier": {
+			"type": "text",
+			"description": "Identifier within its vocabulary."
+		},
+		"URI": {
+			"type": "url",
+			"description": "Resolvable URI."
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"description": "A field that records a family relationship between two persons",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"description": "Reified 'Publication' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Publication Actor": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of publication to an actor responsible for carrying it out.",
+			"required": false,
+			"targetSchemas": [
+				"Person",
+				"Organization"
+			],
+			"multiple": true
+		},
+		"Publication Actor Role": {
+			"type": "relation",
+			"description": "This field is used to link an activity forming part of the publication process to the person or group participating in a specified role, including any notes or data assignments documenting the source or rationale for the role attribution.",
+			"required": false,
+			"targetSchemas": [
+				"Roles"
+			],
+			"multiple": false
+		},
+		"Location of Publication Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of publication to a location at which it was carried out.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Related Event Causal to Publication": {
+			"type": "relation",
+			"description": "This field is used to link the documented publication activity to another event which was the causal reason behind its coming to be.",
+			"required": false,
+			"targetSchemas": [
+				"Event"
+			],
+			"multiple": false
+		},
+		"Publication Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the documented event of publication.",
+			"required": false,
+			"targetSchemas": [
+				"Publication Type"
+			],
+			"multiple": false
+		},
+		"Date for Publication Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of publication to an instance of time-span recording the temporal extent of the activity.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify digital resources according to their format, nature, or function.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

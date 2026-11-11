@@ -1,0 +1,26 @@
+{
+	"description": "A controlled list of types used to classify nationalities associated with persons.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Metatype": {
+			"type": "relation",
+			"description": "",
+			"required": false,
+			"default": [
+				{
+					"target": "sF1gYAoSDQLg4YU"
+				}
+			],
+			"targetSchemas": [
+				"Metatypes"
+			],
+			"multiple": false
+		}
+	}
+}

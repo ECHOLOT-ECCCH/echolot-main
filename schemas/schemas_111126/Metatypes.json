@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of metatypes used to classify and define the types or categories of other types, providing a higher-level classification structure.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

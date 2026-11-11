@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify creation events according to the nature or process of creation, production, or making of a work or object.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

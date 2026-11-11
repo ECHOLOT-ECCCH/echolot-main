@@ -1,0 +1,22 @@
+{
+	"description": "Reified 'Digital Reference' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Digital Reference": {
+			"type": "url",
+			"description": "This field is used to link the documented entity to a digital object, expressed as a uri, which describes it.",
+			"required": true,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Digital Reference Type": {
+			"type": "relation",
+			"description": "This field is used to indicate the type of a a digital object, expressed as a uri, which describes the documented person.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Reference Type"
+			],
+			"multiple": false
+		}
+	}
+}

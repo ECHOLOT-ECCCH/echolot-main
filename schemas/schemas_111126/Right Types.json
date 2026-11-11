@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify the rights associated with an object, work, or resource.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify documents according to their format, purpose, or nature.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

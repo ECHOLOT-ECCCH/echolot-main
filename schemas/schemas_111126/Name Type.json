@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of name types used to classify and specify the nature or category of a name associated with an entity or resource.",
+	"propertyDefinitions": {
+		"URI": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

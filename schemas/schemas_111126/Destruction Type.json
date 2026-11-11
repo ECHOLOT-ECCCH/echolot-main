@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify the methods or circumstances of an object's destruction.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

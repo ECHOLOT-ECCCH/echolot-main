@@ -1,0 +1,34 @@
+{
+	"description": "Reified 'Rights' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Right Holder": {
+			"type": "relation",
+			"description": "This field is used to link to an actor who possesses the documented right.",
+			"required": false,
+			"targetSchemas": [
+				"Person",
+				"Organization"
+			],
+			"multiple": true
+		},
+		"Right Type": {
+			"type": "relation",
+			"description": "This field is used to indicate the type of documented right .",
+			"required": false,
+			"targetSchemas": [
+				"Right Types"
+			],
+			"multiple": false
+		},
+		"Rights Statement": {
+			"type": "relation",
+			"description": "This collection of fields is used to document related statements about the document right held over some object.",
+			"required": false,
+			"targetSchemas": [
+				"Statement"
+			],
+			"multiple": true
+		}
+	}
+}

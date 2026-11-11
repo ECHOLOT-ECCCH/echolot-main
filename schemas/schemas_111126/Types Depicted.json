@@ -1,0 +1,12 @@
+{
+	"description": "Identifies the type of entity or subject depicted in an image.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

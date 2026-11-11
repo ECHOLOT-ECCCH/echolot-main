@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of publication types used to classify publications according to their format, nature, or medium of publication.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"description": "Reified 'Professional Activity' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Actor in Professional Activity": {
+			"type": "relation",
+			"description": "This field is used to link the documented actor's professional activity to other actors  involved in carrying it out.",
+			"required": false,
+			"targetSchemas": [
+				"Person",
+				"Organization"
+			],
+			"multiple": true
+		},
+		"Location of Professional Activity": {
+			"type": "relation",
+			"description": "This field is used to link the documented actor's professional activity to a location at which it was carried out.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Professional Activity Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the documented actor's professional activity.",
+			"required": false,
+			"targetSchemas": [
+				"Professional Activity Types"
+			],
+			"multiple": false
+		},
+		"Source Reference Work for Professional Activity": {
+			"type": "relation",
+			"description": "This field is used to link the documented actor's professional activity to a textual source which documents the professional itself.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": false
+		},
+		"Date of Professional Activity": {
+			"type": "relation",
+			"description": "This field is used to link the documented actor's professional activity to an instance of time-span recording the temporal extent of the activity.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

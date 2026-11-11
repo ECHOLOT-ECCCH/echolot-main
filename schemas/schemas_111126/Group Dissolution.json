@@ -1,0 +1,24 @@
+{
+	"description": "A collection of fields describing the dissolution and termination of a group.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Dissolution Location": {
+			"type": "relation",
+			"description": "Identifies the location where a group was dissolved.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Dissolution Date": {
+			"type": "relation",
+			"description": "Records the date on which a group was dissolved.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

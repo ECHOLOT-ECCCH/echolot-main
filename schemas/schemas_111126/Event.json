@@ -1,0 +1,156 @@
+{
+	"description": "The event reference data model provides a list of standard fields that are typically present in the general description of an event, taken in the sense of planned public or social occasions, organized towards some purpose. Examples of events would be workshops, meetings, conferences, congresses and so on. The aim of this reference model is to cover basic descriptors that are typically employed in the documentation of an event. This reference model aims to remain at a general level description, providing a consolidated, high-level reference data model of most commonly reused descriptors for an event as such and to provide for these, in turn, a set of standard semantic mappings to the CIDOC CRM. Moreover, each field is marked with regards to its potential functionality with regards to instance matching between overlapping datasets. This level of modelling is seen as a necessary basic reference point on which to build more complex documentation.",
+	"propertyDefinitions": {
+		"Name": {
+			"type": "relation",
+			"description": "Link to the reified Name collection.",
+			"required": false,
+			"targetSchemas": [
+				"Name"
+			],
+			"multiple": true
+		},
+		"Identifier": {
+			"type": "relation",
+			"description": "Link to the reified Identifier collection.",
+			"required": false,
+			"targetSchemas": [
+				"Identifier"
+			],
+			"multiple": true
+		},
+		"Equivalent": {
+			"type": "url",
+			"description": "This field is used to document a URI which is meant to indicate an equivalence between the documented event and a resolvable, structured reference resource that stands as a document for this self same entity.",
+			"required": false,
+			"multiple": true,
+			"uniqueItems": false
+		},
+		"Type": {
+			"type": "relation",
+			"description": "Link to the reified Type collection.",
+			"required": false,
+			"targetSchemas": [
+				"Event Types"
+			],
+			"multiple": false
+		},
+		"Participant": {
+			"type": "relation",
+			"description": "This field is used to record actors involved in the documented event.",
+			"required": false,
+			"targetSchemas": [
+				"Person"
+			],
+			"multiple": true
+		},
+		"Event Timespan": {
+			"type": "relation",
+			"description": "Link to the reified Event Timespan collection.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		},
+		"Event Location": {
+			"type": "relation",
+			"description": "This field is used to link the documented event to an instance of place at which it occurred.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Part of Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented event to the broader activity of which it forms a part.",
+			"required": false,
+			"targetSchemas": [
+				"Event"
+			],
+			"multiple": true
+		},
+		"Statement": {
+			"type": "relation",
+			"description": "Link to the reified Statement collection.",
+			"required": false,
+			"targetSchemas": [
+				"Statement"
+			],
+			"multiple": true
+		},
+		"Depicting Image": {
+			"type": "relation",
+			"description": "This field  is used to record the existence of an image which depicts the documented event.",
+			"required": false,
+			"targetSchemas": [
+				"Image"
+			],
+			"multiple": true
+		},
+		"Source Reference": {
+			"type": "relation",
+			"description": "Link to the reified Source Reference collection.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Digital Reference": {
+			"type": "relation",
+			"description": "Link to the reified Digital Reference collection.",
+			"required": false,
+			"targetSchemas": [
+				"Digital Reference"
+			],
+			"multiple": true
+		},
+		"Documented in Collection": {
+			"type": "relation",
+			"description": "Identifies the curated holding or collection that contains a linguistic object documenting or describing the event.",
+			"required": false,
+			"targetSchemas": [
+				"Subjects"
+			],
+			"multiple": true
+		},
+		"Exercise of Role Actor": {
+			"type": "relation",
+			"description": "This field is used to link the documented event to an actor that plays a typified role in that activity.",
+			"required": false,
+			"targetSchemas": [
+				"Person"
+			],
+			"multiple": true
+		},
+		"Related Activities": {
+			"type": "relation",
+			"description": "Identifies activities that constitute parts or components of the event, representing activities that occur within or contribute to the documented event.",
+			"required": false,
+			"targetSchemas": [
+				"Subjects"
+			],
+			"multiple": false
+		},
+		"Related Events": {
+			"type": "relation",
+			"description": "Documents events that constitute parts or components of the documented event, representing constituent events within a larger event.",
+			"required": false,
+			"targetSchemas": [
+				"Event"
+			],
+			"multiple": true
+		},
+		"Used Objects": {
+			"type": "relation",
+			"description": "Identifies the human-made objects that were used during an activity or event.",
+			"required": false,
+			"targetSchemas": [
+				"Cultural Heritage Object"
+			],
+			"multiple": true
+		}
+	}
+}

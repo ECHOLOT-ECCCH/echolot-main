@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of dimension types used to specify the particular measurement of an object, such as height, width, length, depth, or diameter.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

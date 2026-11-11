@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of types used to classify contact points according to their communication method or purpose.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

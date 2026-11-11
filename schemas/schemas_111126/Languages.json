@@ -1,0 +1,12 @@
+{
+	"description": "A controlled list of languages used to identify the language associated with a name, entity, resource, or descriptive value.",
+	"propertyDefinitions": {
+		"URL": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		}
+	}
+}

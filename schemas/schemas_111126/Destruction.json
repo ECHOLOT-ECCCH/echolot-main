@@ -1,0 +1,51 @@
+{
+	"description": "Reified 'Destruction' collection (WP2.3): a group of related fields modelled as its own Subject.",
+	"subjectsAreDependent": true,
+	"propertyDefinitions": {
+		"Location of Destruction Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of destruction to a location at which it occurred.",
+			"required": false,
+			"targetSchemas": [
+				"Place"
+			],
+			"multiple": false
+		},
+		"Related Event Causal to Destruction Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of destruction to another event which was the causal reason behind its coming to pass.",
+			"required": false,
+			"targetSchemas": [
+				"Event"
+			],
+			"multiple": false
+		},
+		"Destruction Event Type": {
+			"type": "relation",
+			"description": "This field is used to record the formal type of the documented event of destruction.",
+			"required": false,
+			"targetSchemas": [
+				"Destruction Type"
+			],
+			"multiple": false
+		},
+		"Destruction Event Source Reference": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of destruction to a textual source which documents the event itself.",
+			"required": false,
+			"targetSchemas": [
+				"Bibliographic Record"
+			],
+			"multiple": true
+		},
+		"Date of Destruction Event": {
+			"type": "relation",
+			"description": "This field is used to link the documented event of destruction to an instance of time-span recording the temporal extent of the event.",
+			"required": false,
+			"targetSchemas": [
+				"Timespan"
+			],
+			"multiple": false
+		}
+	}
+}

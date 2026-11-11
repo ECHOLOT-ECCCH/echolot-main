@@ -1,0 +1,26 @@
+{
+	"description": "A controlled list of terms used to classify ethnic groups or ethnic affiliations.",
+	"propertyDefinitions": {
+		"URI": {
+			"type": "url",
+			"description": "",
+			"required": false,
+			"multiple": false,
+			"uniqueItems": false
+		},
+		"Metatype": {
+			"type": "relation",
+			"description": "",
+			"required": false,
+			"default": [
+				{
+					"target": "sF1gYNUirbUC5g3"
+				}
+			],
+			"targetSchemas": [
+				"Metatypes"
+			],
+			"multiple": false
+		}
+	}
+}
